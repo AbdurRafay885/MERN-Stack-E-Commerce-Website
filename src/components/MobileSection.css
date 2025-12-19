@@ -1,0 +1,126 @@
+/* SECTION BACKGROUND */
+.mobile-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* MAIN CONTAINER LIKE HERO SECTION */
+.mobile-container {
+  width: 100%;
+  max-width: 1500px;   /* same as hero */
+  margin: 0 auto;
+  padding: 0 60px;     /* same horizontal padding */
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mobile-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* VIEW ALL BUTTON */
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: #0a63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.view-all-btn:hover {
+  background: #004bcc;
+}
+
+/* PRODUCT GRID */
+.mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+/* PRODUCT CARD */
+.mobile-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+}
+
+.mobile-card:hover {
+  transform: translateY(-8px);
+}
+
+/* PRODUCT IMAGE */
+.mobile-img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* NAME & PRICE */
+.mobile-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.mobile-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+/* ADD TO CART BUTTON */
+.add-cart-btn {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.add-cart-btn:hover {
+  background: #0a63ff;
+  border-color: #0a63ff;
+  color: white;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1100px) {
+  .mobile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .mobile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-container {
+    padding: 0 20px;
+  }
+}

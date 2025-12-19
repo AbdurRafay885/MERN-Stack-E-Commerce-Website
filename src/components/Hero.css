@@ -1,0 +1,151 @@
+/* ================================
+   HERO SECTION
+================================ */
+.hero-skr {
+  width: 100%;
+  min-height: 100px;
+  padding: 0px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* ================================
+   INNER CONTAINER
+================================ */
+.hero-container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* ================================
+   LEFT / CENTER / RIGHT SPACE RATIO
+================================ */
+/* MORE SPACE FOR LEFT CONTENT */
+.hero-left {
+  flex: 1.4;         /* 🔥 wider left section */
+  min-width: 350px;
+}
+
+/* IMAGE SECTION */
+.hero-center {
+  flex: 2;         /* still visible but balanced */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RIGHT CONTENT */
+.hero-right {
+  flex: 0.9;         /* slightly smaller */
+  min-width: 280px;
+}
+
+/* ================================
+   TITLE & TEXT
+================================ */
+.hero-left h1 {
+  font-size: 52px;          /* 🔥 bigger heading */
+  font-weight: 800;
+  line-height: 1.1;         /* tighter look */
+  margin-bottom: 25px;
+}
+
+/* Description text */
+.hero-text {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* ================================
+   BUTTON
+================================ */
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #fff;
+  padding: 14px 32px;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+
+  transition: 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ================================
+   PRODUCT IMAGE (EVEN LARGER)
+================================ */
+.hero-product {
+  width: 100%;
+  max-width: 900px;          /* 🔥 BIG HERO IMAGE */
+  height: auto;
+  object-fit: contain;
+
+  transform: scale(1.45);    /* 🔥 visually massive */
+  filter: drop-shadow(0 35px 45px rgba(0, 0, 0, 0.35));
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 1400px) {
+  .hero-left h1 {
+    font-size: 60px;
+  }
+  .hero-product {
+     max-width: 1800px;     /* bigger natural width */
+  transform: scale(4.00);
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 50px;
+  }
+
+  .hero-product {
+    max-width: 450px;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left h1 {
+    font-size: 38px;
+  }
+
+  .hero-product {
+    max-width: 300px;
+  }
+}

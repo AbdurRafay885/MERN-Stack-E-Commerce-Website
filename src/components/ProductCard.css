@@ -1,0 +1,92 @@
+/* ============================
+   CARD CONTAINER
+=============================== */
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+  transition: 0.25s ease;
+  width: 280px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   IMAGE BOX
+=============================== */
+.product-card .product-img-box {
+  width: 100%;
+  height: 230px; /* bigger space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:-15px;
+}
+
+.product-card .product-img-box img {
+  width: 250px;  /* bigger */
+  height: 250px; /* bigger */
+  object-fit: contain;
+}
+
+/* ============================
+   PRODUCT NAME
+=============================== */
+.product-card .product-name {
+  font-size: 20px;        /* bigger */
+  font-weight: 600;
+  color: #414141;            /* enforce black */
+  margin: px;
+  text-align: left;
+  line-height: 1.4;
+  min-height: 36px;
+}
+
+/* ============================
+   PRICE + BUTTON ROW
+=============================== */
+.product-card .product-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* PRICE */
+.product-card .head {
+  font-size: 18px;        /* bigger */
+  font-weight: 600;
+  color: #000000 !important; /* force black */
+}
+
+.product-card .price {
+  font-size: 18px;        /* bigger */
+  font-weight: 600;
+  color: #f07b0e !important; /* force black */
+  padding-left:6px;
+}
+
+/* ============================
+   ADD TO CART BUTTON
+=============================== */
+.product-card .add-cart-btn {
+  background: #058aff !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.product-card .add-cart-btn:hover {
+  background: #0074d9 !important;
+  color: #fff !important;
+}

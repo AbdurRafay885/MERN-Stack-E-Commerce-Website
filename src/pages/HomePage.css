@@ -1,0 +1,22 @@
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+
+  color: white;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 60px;
+}
+
+h2 {
+  text-align: center;
+  margin: 50px 0 30px;
+  font-size: 32px;
+  color: #00A6FB;
+  font-weight: 600;
+}
+
+.categories-section,
+.best-sellers {
+  width: 100%;
+}

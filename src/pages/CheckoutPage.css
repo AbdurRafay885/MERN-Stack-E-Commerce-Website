@@ -1,0 +1,77 @@
+/* Page center */
+.checkout-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #f8f9fa;
+}
+
+/* Card */
+.checkout-card {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+/* Title */
+.checkout-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Inputs */
+.checkout-form input,
+.checkout-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  border-color: #058aff;
+  box-shadow: 0 0 5px rgba(5, 138, 255, 0.3);
+}
+
+/* Textarea height */
+.checkout-form textarea {
+  height: 110px;
+  resize: none;
+}
+
+/* Button */
+.checkout-btn {
+  padding: 12px;
+  background: #058aff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background: #0070d2;
+}
